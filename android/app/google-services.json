@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "921416786140",
+    "firebase_url": "https://crimespy-9e551.firebaseio.com",
+    "project_id": "crimespy-9e551",
+    "storage_bucket": "crimespy-9e551.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921416786140:android:2205308e213fd6ccd51419",
+        "android_client_info": {
+          "package_name": "com.example.crimespy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921416786140-n56rq33k6r7ov9fucn4oj35idb5rpb2j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsu89EHF11Mj0IsPRkZvAvKLSjBpFMyRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921416786140-n56rq33k6r7ov9fucn4oj35idb5rpb2j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

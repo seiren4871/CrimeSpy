@@ -1,0 +1,136 @@
+ void _initializeAndPlay(int index) async {
+    print("_initializeAndPlay ---------> $index");
+    final clip = _clips[index];
+    final controller = VideoPlayerController.asset(clip.videoPath());
+    final old = _controller;
+    _controller = controller;
+    if (old != null) {
+      old.removeListener(_onControllerUpdated);
+      await old.pause();
+    }
+    setState(() {
+      debugPrint("---- controller changed");
+    });
+
+    controller
+      ..initialize().then((_) {
+        debugPrint("---- controller initialized");
+        old?.dispose();
+        _playingIndex = index;
+        controller.addListener(_onControllerUpdated);
+        controller.play();
+        setState(() {});
+      });
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    return new ListView(
+////    children: snapshochit.data.documents.map((DocumentSnapshot document) {
+////    return new ListTile(
+////    title: new Text(document.data['detail']),
+////    subtitle: new Text(document.data['type']),
+////    );
+////    }).toList(),
+////    );
+//                post_model.getListOut(snapshot.data.documents);
+
+MyApp({this.storage});
+  final FirebaseStorage storage;
+storage: storage,
+
+(imageFile == null )? AssetImage('assets/img/profile_anonymous.jpg') : Image.file(File(imageFile.path))
+
+ String pic;
+   Future<void> getPictureUrl(String postcrimeid) async {
+        // try {
+        StorageReference reference = FirebaseStorage.instance.ref().child("2973fe80-ca55-11ea-9631-2fcade344edf0.jpg");
+        final String url = await reference.getDownloadURL();
+        setState(() {
+          pic = url;
+        });
+//        return pic;
+      }
+
+
+    //    return new ListView(
+////    children: snapshochit.data.documents.map((DocumentSnapshot document) {
+////    return new ListTile(
+////    title: new Text(document.data['detail']),
+////    subtitle: new Text(document.data['type']),
+////    );
+////    }).toList(),
+////    );
+//                post_model.getListOut(snapshot.data.documents);
+
+//                return ListView.builder(
+//                    padding: EdgeInsets.all(ScreenUtil().setWidth(10)),
+//                    itemCount: snapshot.data.documents.length,
+//                    itemBuilder: (BuildContext context, int index ) {
+//                      final list = snapshot.data.documents.map(
+//                              (doc) {
+//                            return PostCard(context, doc);}).toList();
+//                      return list;
+//                    }
+//                );
+
+//                      if( !snapshot.hasData ){
+//                        return CircularProgressIndicator();
+//                      }
+    //dont show but render
+//                      snapshot.data.documents.map(
+//                              (snap) {
+//                                PostCard( context, snap);
+//                              }
+//
+//                      ).toList();
+
+//                      return snapshot.data.documents => PostCard();
+//                      user thissssssss it cannn showwww
+//                      snapshot.data.documents.map((snap) {
+//                        print(snap.data["detail"]);
+//                        post_model.detail = "";
+//                        post_model.detail = snap.data["detail"];
+////                        post_model.detail = "";
+////                        });
+//                        return PostCard();
+////
+//                      }).toList();
+//
+
+//                        return PostCard();
+//                      });
+
+//                    },
