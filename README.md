@@ -1,6 +1,6 @@
 # crimespy
 
-A new Flutter project.
+CrimeSpy is an application developed by Flutter framework. It allows users to report the area which has happened the crimes or incidents that could harm our safety, otherwise, users can check the rate or the total of the crimes in the area around them. Moreover, CrimeSpy is provided to alert to all users in respective area as well.
 
 ## Getting Started
 
